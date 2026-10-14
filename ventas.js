@@ -10,6 +10,10 @@ calcularComision = function(numeroVentas, precioProducto){
 }
 calcular = function(){
 
+    let valorRecuperarTexto = recuperarTexto("txtSueldoBase");
+    let valorRecuperarTexto = recuperarTexto("txtVentas");
+    let valorRecuperarTexto = recuperarTexto("txtPrecio");
+
     //Recuperamos propiedades de las cajas de texto
     let componenteSueldoBase = document.getElementById("txtSueldoBase");
     //Recuperamos el valor de las cajas de texto que los usuarios ingresan
@@ -29,6 +33,8 @@ calcular = function(){
     
     let total = sueldoBase + comision; 
 
+//--------------------------------------------
+    
     let spSueldoBase = document.getElementById("spSueldoBase");
     let spComision = document.getElementById("spComision");
     let spTotal = document.getElementById("spTotal");
